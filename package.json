@@ -1,0 +1,14 @@
+{
+  "name": "e2e-playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+  "test": "cucumber-js --require-module ts-node/register --require ./support/hooks.ts --require ./steps/**/*.ts --format progress",
+  "test:headed": "HEADLESS=false npm test",
+  "test:debug": "HEADLESS=false PAUSE=true npm test"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
