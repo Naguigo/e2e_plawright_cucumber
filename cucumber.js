@@ -1,6 +1,7 @@
 module.exports = {
     default: [
-      '--require-module ts-node/register',         // Permite usar TypeScript
+      '--require-module ts-node/register',
+      '--require ./support/hooks.ts',        // Permite usar TypeScript
       '--require steps/**/*.ts',                   // Aponta para os steps
       'features/**/*.feature',                     // Aponta para as features
       '--format progress-bar',                     // Exibe barra de progresso
